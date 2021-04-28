@@ -12,7 +12,8 @@ const forecast = (longitude, latitiude, callback) => {
             callback(undefined,
                 body.current.weather_descriptions[0]
                 + '. It is currently ' + body.current.temperature
-                + ' degrees out. It feels like ' + body.current.feelslike + ' degrees out.')
+                + ' degrees out (feels like ' + body.current.feelslike + ' degrees)'
+                + ' and there is a ' + body.current.wind_dir + ' wind blowing at ' + body.current.wind_speed + 'km/h')
         }
     })
 }
