@@ -36,7 +36,7 @@ app.get('/about', (req, res) => {
 app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Help Page',
-        helpText: 'This is some specific help text',
+        helpText: 'This is some specific help text.',
         name: 'Brad Sorour'
     })
 })
@@ -44,7 +44,7 @@ app.get('/help', (req, res) => {
 app.get('/weather', (req, res) => {
     if (!req.query.address) {
         return res.send({
-            error: 'You umust provide an address'
+            error: 'You must provide an address.'
         })
     }
 
@@ -71,7 +71,7 @@ app.get('/weather', (req, res) => {
 app.get('/products', (req, res) => {
     if (!req.query.search) {
         return res.send({
-            error: 'You umust provide a search term'
+            error: 'You must provide a search term'
         })
     }
 
